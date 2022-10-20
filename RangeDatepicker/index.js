@@ -181,7 +181,7 @@ const RangeDatepicker = (props) => {
 			<View style={styles.dayHeader}>
 				{
 					props.dayHeadings.map((day, i) => {
-						return (<Text style={{width: "14.28%", textAlign: 'center'}} key={i}>{day}</Text>)
+						return (<Text style={{width: "14.28%", textAlign: 'center', color: 'black'}} key={i}>{day}</Text>)
 					})
 				}
 			</View>
