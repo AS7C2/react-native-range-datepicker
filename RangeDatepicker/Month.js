@@ -107,7 +107,7 @@ const Month = memo((props) => {
 	
 	return (
 		<View>
-			<Text style={{color: props.textColor, ...titleStyle}}>
+			<Text style={{color: props.textColor ?? 'black', ...titleStyle}}>
 				{capitalizeTitle ?
 					capitalize(dayJsMod(month, 'YYYYMM').format(titleFormat)) :
 					dayJsMod(month, 'YYYYMM').format(titleFormat)
